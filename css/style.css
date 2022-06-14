@@ -1,0 +1,23 @@
+.card {
+    margin-top: 20px;
+}
+
+.card-text {
+    height: 70px;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+small {
+    font-style: italic;
+}
+
+h4.card-title{
+    color: rgb(75, 48, 194);
+}
+
+div.livro:nth-of-type(5) div.card h4 {
+    color: red;
+}

@@ -1,0 +1,58 @@
+<%- include("header.ejs") %>
+<%- include("nav.ejs") %>
+
+<div class="container mt-5 pt-5">
+    <header>
+        <h1>Books Online
+            <small>Market Place de Livros </small>
+        </h1>
+    </header>
+    <!-- =============== Cadastro ================== -->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Preencha todos os campos</h4>
+                    <form action="" method="POST" class="mt-5 mb-5">                        
+                        <fieldset>
+                            <legend>Cadastre-se</legend>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <label>Nome:</label>
+                                    <input class="form-control" name="nome" id="nome_cadastro">
+                                </li>
+                                <li>
+                                    <label>Email:</label>
+                                    <input class="form-control" name="email" id="email_cadastro">
+                                </li>
+                                <li>
+                                    <label>Telefone:</label>
+                                    <input class="form-control" name="telefone" id="telefone_cadastro">
+                                </li>
+                                <li>
+
+                                    <label>Senha:</label>
+                                    <input class="form-control" type="password" name="senha" id="senha_cadastro">
+                                </li>
+                                <li>
+                                    <label>Confirme a Senha:</label>
+                                    <input class="form-control" type="password" name="conf_senha"
+                                        id="conf_senha_cadastro">
+                                </li>
+                                <li>
+                                    <button class="btn btn-info mt-5">Confirmar</button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =============== Fim do Cadastro ================== -->
+<%- include("footer.ejs") %>
+
+</div>
+</div>
