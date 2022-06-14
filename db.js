@@ -4,7 +4,7 @@ async function conecta(){
     const mysql = require("mysql2/promise")
     const conn = await mysql.createConnection({
         host: "localhost",
-        user: "seu_user",
+        user: "seu_usuario",
         password: "sua_senha",
         database: "filmes"
     })
@@ -39,7 +39,7 @@ async function selectSingle(id){
 
 async function selectPromo(){
     const conectado = await conecta()
-    const [rows] = await conectado.query("SELECT * FROM livros WHERE promo=1")
+    const [rows] = await conectado.query("select * from livros where promo=1")
     //console.log(rows)
     return rows
 }
@@ -52,10 +52,10 @@ async function selectUsers(email,senha){
     return rows
 }
 
-async function updatePromo(id){
-    const conectado = await conecta()
+async function updatePromo(promo,id){
+    const conectado = await conecta();
     const values = [promo,id]
-    return await conectado.query("UPDATE livros SET promo=? WHERE livros_id=?",values)
+    return await conectado.query("UPDATE livros set promo=? Where livros_id=?",values)
 }
 //updatePromo(1,3)
 
@@ -133,9 +133,5 @@ module.exports = {
     insertContato,
     cadastroContato,
     insertCarrinho,
-    deleteCarrinho
-    
+    deleteCarrinho    
 }
-
-
-
